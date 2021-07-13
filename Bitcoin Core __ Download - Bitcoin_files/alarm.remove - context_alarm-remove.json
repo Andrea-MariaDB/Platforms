@@ -1,0 +1,256 @@
+{
+  "id": "ccb03ac4-6dd3-4ed3-a17d-786b779e63bb",
+  "name": "alarm.remove - context:alarm-remove",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "alarm-remove"
+  ],
+  "contexts": [
+    "alarm-remove"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "alarm.remove",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "time",
+          "dataType": "@sys.time",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$time",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "date",
+          "dataType": "@sys.date",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$date",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "recurrence",
+          "dataType": "@recurrence",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$recurrence",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "all",
+          "dataType": "@all",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$all",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "remove ",
+          "userDefined": false
+        },
+        {
+          "text": "all",
+          "userDefined": false,
+          "alias": "all",
+          "meta": "@all"
+        },
+        {
+          "text": " of ",
+          "userDefined": false
+        },
+        {
+          "text": "them",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": "d66cc411-7a01-48f4-a29d-a1fafdba4dba",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "remove for ",
+          "userDefined": false
+        },
+        {
+          "text": "7 am",
+          "userDefined": true,
+          "alias": "time",
+          "meta": "@sys.time"
+        }
+      ],
+      "count": 0,
+      "id": "2ae429c7-ce7a-489d-bb4b-322d94e9ac89",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "the one for ",
+          "userDefined": false
+        },
+        {
+          "text": "Saturday",
+          "userDefined": true,
+          "alias": "date",
+          "meta": "@sys.date"
+        },
+        {
+          "text": " too",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b1f6cdff-5693-4e07-ba3c-7da4e0bc9a3b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "delete ",
+          "userDefined": false
+        },
+        {
+          "text": "all",
+          "userDefined": false,
+          "alias": "all",
+          "meta": "@all"
+        }
+      ],
+      "count": 0,
+      "id": "27359d0a-a107-4081-a828-c72414add5ba",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "erase",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " for ",
+          "userDefined": false
+        },
+        {
+          "text": "every Monday",
+          "userDefined": true,
+          "alias": "recurrence",
+          "meta": "@recurrence"
+        },
+        {
+          "text": " too",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7ac4fd58-4749-4a35-b505-b620e6f4631d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "now the one for ",
+          "userDefined": false
+        },
+        {
+          "text": "9 pm",
+          "userDefined": true,
+          "alias": "time",
+          "meta": "@sys.time"
+        }
+      ],
+      "count": 0,
+      "id": "02c0eba2-d0da-4c1d-8b82-3b7f785cb5c9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "turn off ",
+          "userDefined": false
+        },
+        {
+          "text": "the one",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " for ",
+          "userDefined": false
+        },
+        {
+          "text": "every Sunday",
+          "userDefined": true,
+          "alias": "recurrence",
+          "meta": "@recurrence"
+        }
+      ],
+      "count": 0,
+      "id": "195409f2-c16f-4bdb-b0ca-74d78291f13f",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
